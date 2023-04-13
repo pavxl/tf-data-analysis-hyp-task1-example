@@ -12,4 +12,4 @@ def solution(x_success: int,
     cnt, nb = np.array([x_success, y_success]), np.array([x_cnt, y_cnt])
     z, p = proportions_ztest(cnt, nb, alternative = 'larger')
     
-    return p < a
+    return p < alpha
